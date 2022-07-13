@@ -15,12 +15,12 @@ const Footer = () => (
           <div>
             <ul className="social-links mt-8 flex align-center self-end">
               <li>
-                <a href="" className="fa fa-facebook" target="_blank">
+                <a href="https://www.youtube.com/" className="fa fa-facebook">
                   <Facebook />
                 </a>
               </li>
               <li className="ml-2 mt-1">
-                <a href="" target="_blank">
+                <a href="https://www.youtube.com/">
                   <Twitter />
                 </a>
               </li>
@@ -28,13 +28,12 @@ const Footer = () => (
                 <a
                   href="https://www.youtube.com/channel/UCUcIrmp1YQX0hhig4tKSlNQ"
                   className="fa fa-youtube"
-                  target="_blank"
                 >
                   <Youtube />
                 </a>
               </li>
               <li className="ml-2">
-                <a href="" className="fa fa-instagram" target="_blank">
+                <a href="https://www.youtube.com/" className="fa fa-instagram">
                   <Instagram />
                 </a>
               </li>
