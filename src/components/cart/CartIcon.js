@@ -1,17 +1,21 @@
 import { useContext } from "react"
-import { AppContext } from "../../store/AppContext"
+import AppContext from "../../store/AppContext"
 import Link from "next/link"
 
 const CartIcon = () => {
-  const [cart] = useContext(AppContext)
+  const appCtx = useContext(AppContext)
   const productsCount =
-    null !== cart && Object.keys(cart).length ? cart.totalProductsCount : ""
+    null !== appCtx.cart && Object.keys(appCtx.cart).length
+      ? appCtx.cart.totalProductsCount
+      : ""
   const totalPrice =
-    null !== cart && Object.keys(cart).length ? cart.totalProductsPrice : ""
+    null !== appCtx.cart && Object.keys(appCtx.cart).length
+      ? appCtx.cart.totalProductsPrice
+      : ""
 
   return (
     <Link href="/cart">
-      <a className="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-black mr-10">
+      <a className="cart-icon">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           className="hidden lg:block m-auto"

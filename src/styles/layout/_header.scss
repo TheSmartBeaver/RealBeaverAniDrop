@@ -1,0 +1,41 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.05);
+
+    &__logo-box {
+        //flex-shrink: 1;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0px 10px;
+    }
+
+    &__navigation-box {
+        //flex-grow: 1;
+        //min-width: 40%;
+        overflow-x: auto;
+    }
+
+    &__user-box {
+        //flex-shrink: 1;
+    }
+
+    &__logo-title {
+        color: black;
+        letter-spacing: -0.025em;
+        font-weight: 600;
+        font-size: 1.25rem; /* 20px */
+        line-height: 1.75rem; /* 28px */
+    }
+}
+
+.cart-icon {
+    //block mt-4 lg:inline-block lg:mt-0 text-black hover:text-black mr-10
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+    margin-right: 10px;
+}

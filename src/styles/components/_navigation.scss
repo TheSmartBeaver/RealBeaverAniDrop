@@ -1,0 +1,18 @@
+.navigation-menu {
+
+    &__items {
+        color: aqua;
+        display: flex;
+        flex-direction: row;
+        // justify-content: center;
+        // flex-flow: wrap;
+        gap: 10px 20px;
+    }
+
+    &__item {
+        border: solid 2px;
+        border-color: aquamarine;
+        padding: 4px;
+        width: 30%;
+    }
+}
